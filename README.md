@@ -227,4 +227,40 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ for the Obsidian community**
 
-For questions, suggestions, or issues, please visit our [GitHub repository](https://github.com/your-username/obsidian-reading-highlight).
+For questions, suggestions, or issues, please visit our [GitHub repository](https://github.com/wuxiaobai24/obsidian-reading-highlight).
+
+## 📁 Project Structure
+
+### Core Files
+- **`main.ts`** → Main plugin implementation (symlink to main-real.ts)
+- **`main-real.ts`** → Complete plugin with persistent storage and mobile optimization
+- **`main.js`** → Built plugin output (compiled from TypeScript)
+- **`manifest.json`** → Plugin metadata and configuration
+- **`styles.css`** → Mobile-responsive styling with animations
+
+### Development Files
+- **`main-simple.ts`** → Simplified version for debugging and testing
+- **`main-test.ts`** → Basic testing version with minimal functionality
+- **`test-simple.js/.ts`** → Testing utilities and scripts
+- **`dev.js`** → Development server and deployment utilities
+- **`tsconfig.json`** → TypeScript compiler configuration
+
+### Configuration Files
+- **`package.json`** → Node.js dependencies and build scripts
+- **`package-lock.json`** → Dependency version lock file
+- **`CLAUDE.md`** → Technical documentation for Claude Code
+- **`simple-test-manifest.json`** → Test configuration for development
+
+### Resources
+- **`icons/`** → SVG icon files for the plugin interface
+  - `highlighter-flat.svg` → Flat design highlighter icon
+  - `highlighter-gradient.svg` → Modern gradient highlighter icon
+  - `marker-minimal.svg` → Minimal marker icon
+  - `star-highlight.svg` → Star-style highlight icon
+
+### Key Features by File
+- **main-real.ts**: Core highlighting logic, file persistence, cross-mode sync
+- **styles.css**: Touch-optimized UI, responsive design, animations
+- **dev.js**: Automated deployment to Obsidian vault during development
+- **manifest.json**: Plugin ID, version, compatibility settings
+- **icons/**: Professional vector graphics for mobile and desktop interfaces
