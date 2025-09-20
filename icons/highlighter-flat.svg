@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 简约平面风格荧光笔 -->
+
+  <!-- 荧光笔主体 -->
+  <rect x="6" y="3" width="14" height="6" rx="3" fill="#007AFF"/>
+
+  <!-- 荧光笔帽 -->
+  <rect x="4" y="5" width="4" height="2" rx="1" fill="#0056D3"/>
+
+  <!-- 荧光笔尖 -->
+  <path d="M20 9L22 11L17 16L15 14L20 9Z" fill="#007AFF"/>
+
+  <!-- 高亮线条 -->
+  <rect x="12" y="14" width="10" height="2" rx="1" fill="#FFD60A"/>
+  <rect x="10" y="17" width="12" height="2" rx="1" fill="#FFD60A"/>
+</svg>

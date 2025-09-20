@@ -1,0 +1,11 @@
+{
+  "id": "reading-highlight",
+  "name": "Reading Highlight",
+  "version": "1.1.0",
+  "minAppVersion": "0.15.0",
+  "description": "Supports text selection and highlighting in reading mode with persistent storage, optimized for mobile devices.",
+  "author": "",
+  "authorUrl": "",
+  "fundingUrl": "",
+  "isDesktopOnly": false
+}

@@ -1,0 +1,152 @@
+.reading-highlight {
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+
+.reading-highlight:hover {
+	opacity: 0.8 !important;
+	transform: scale(1.02);
+}
+
+.reading-highlight-btn {
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.reading-highlight-btn:hover {
+	transform: translateY(-2px) scale(1.05);
+	box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4);
+	background: linear-gradient(135deg, #7c8ff0 0%, #8a5cb8 100%);
+}
+
+.reading-highlight-btn:active {
+	transform: translateY(0) scale(0.98);
+	box-shadow: 0 4px 16px rgba(102, 126, 234, 0.2);
+}
+
+.reading-highlight-btn svg {
+	transition: all 0.3s ease;
+	filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+.reading-highlight-btn:hover svg {
+	transform: scale(1.1);
+	filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* 按钮出现动画 */
+.reading-highlight-btn.show {
+	animation: buttonSlideIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes buttonSlideIn {
+	0% {
+		opacity: 0;
+		transform: translateY(20px) scale(0.8);
+	}
+	50% {
+		opacity: 0.8;
+		transform: translateY(-5px) scale(1.05);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+.reading-highlight-menu {
+	animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.reading-highlight-menu button {
+	transition: all 0.1s ease;
+}
+
+.reading-highlight-menu button:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.reading-highlight-menu button:active {
+	transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+	.reading-highlight-btn {
+		bottom: 30px;
+		right: 30px;
+		width: 56px;
+		height: 56px;
+		border-radius: 20px;
+	}
+
+	.reading-highlight-btn svg {
+		width: 24px;
+		height: 24px;
+	}
+
+	.reading-highlight-menu {
+		font-size: 16px;
+		padding: 12px;
+	}
+
+	.reading-highlight-menu button {
+		padding: 10px 18px;
+		margin: 0 6px;
+	}
+}
+
+/* 移动端高亮菜单优化 */
+.reading-highlight-menu {
+	animation: slideIn 0.2s ease-out;
+}
+
+@keyframes slideIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px) scale(0.95);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+.reading-highlight-menu button {
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.reading-highlight-menu button:active {
+	transform: scale(0.95);
+}
+
+/* 移动端特定样式 */
+@media (hover: none) {
+	.reading-highlight-menu button {
+		padding: 14px 22px;
+		font-size: 18px;
+		min-width: 80px;
+		min-height: 44px;
+	}
+
+	.reading-highlight-menu {
+		padding: 18px;
+		border-radius: 16px;
+	}
+}
