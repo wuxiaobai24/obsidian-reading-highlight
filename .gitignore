@@ -10,7 +10,7 @@ build/
 *.tsbuildinfo
 
 # Obsidian plugin specific
-main.js
+# main.js - Required for BRAT installation
 *.map
 
 # Development files
